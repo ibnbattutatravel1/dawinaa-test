@@ -21,7 +21,7 @@ export function Header() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b border-slate-200 shadow-sm">
+    <header className="sticky top-0 z-50 w-full border-b shadow-sm bg-background/95 backdrop-blur-sm border-border">
       <div className="container">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -33,7 +33,7 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-slate-700 hover:text-primary font-medium transition-colors duration-200"
+                className="font-cairo text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
               >
                 {item.name}
               </Link>
@@ -42,16 +42,13 @@ export function Header() {
 
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="text-slate-600 hover:text-primary">
+            <Button variant="ghost" size="icon">
               <Search className="h-5 w-5" />
             </Button>
 
-            <div className="flex items-center gap-2 text-sm text-slate-600">
-              <Phone className="h-4 w-4 text-blue-500" />
-              <span>19199</span>
-            </div>
 
-            <Button variant="gradient" size="sm" className="font-medium">
+
+            <Button variant="gradient" size="sm" className="font-cairo font-bold">
               احجز موعدك
             </Button>
 
@@ -63,7 +60,7 @@ export function Header() {
             <Button variant="ghost" size="icon">
               <Search className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-slate-700">
+            <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
@@ -71,26 +68,23 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden border-t border-slate-200 bg-white">
+          <div className="lg:hidden border-t border-border bg-background">
             <nav className="py-4 space-y-2">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block px-4 py-2 text-slate-700 hover:text-primary hover:bg-slate-50 rounded-md transition-colors"
+                  className="block px-4 py-2 font-cairo font-semibold text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-              <div className="px-4 pt-4 border-t border-slate-200 mt-4">
-                <Button variant="gradient" className="w-full font-medium">
+              <div className="px-4 pt-4 border-t border-border mt-4">
+                <Button variant="gradient" className="w-full font-cairo font-bold">
                   احجز موعدك
                 </Button>
-                <div className="flex items-center justify-center gap-2 mt-3 text-sm text-slate-600">
-                  <Phone className="h-4 w-4 text-blue-500" />
-                  <span>اتصل بنا: 19199</span>
-                </div>
+
               </div>
             </nav>
           </div>

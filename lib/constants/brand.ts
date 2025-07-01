@@ -3,6 +3,7 @@ export const SITE_CONFIG = {
   description: "منصة طبية لربط الأطباء بالمرضى في مصر",
   url: "https://dawina.com",
   ogImage: "https://dawina.com/og.jpg",
+  keywords: ["داوينا", "أطباء", "مرضى", "مصر", "منصة طبية", "حجز أطباء", "استشارة طبية", "باطنة", "أطفال", "نساء وتوليد", "عظام"],
   links: {
     twitter: "https://twitter.com/dawina",
     facebook: "https://facebook.com/dawina",

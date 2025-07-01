@@ -19,6 +19,10 @@ const config: Config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-tajawal)"],
+        cairo: ["var(--font-cairo)"]
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

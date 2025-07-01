@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-br from-slate-50 to-blue-50 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-950 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-20 h-20 bg-pink-500 rounded-full animate-float"></div>
@@ -23,7 +23,7 @@ export function HeroSection() {
           {/* Content */}
           <div className="text-center lg:text-right space-y-8">
             <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm text-slate-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-slate-200">
+              <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm text-slate-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-slate-200 dark:bg-slate-800/80 dark:text-slate-300 dark:border-slate-700">
                 <Shield className="w-4 h-4 text-blue-500" />
                 منصة طبية موثوقة ومعتمدة في مصر
               </div>
@@ -31,10 +31,10 @@ export function HeroSection() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 <span className="text-gradient">داوينا</span>
                 <br />
-                <span className="text-slate-900">صحتك في أيدٍ أمينة</span>
+                <span className="text-slate-900 dark:text-slate-200">صحتك في أيدٍ أمينة</span>
               </h1>
 
-              <p className="text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+              <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
                 ابحث عن أفضل الأطباء في مصر واحجز موعدك بسهولة. أكثر من 10,000 طبيب معتمد في جميع التخصصات الطبية في
                 خدمتك على مدار الساعة.
               </p>
@@ -46,24 +46,24 @@ export function HeroSection() {
                 <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-teal-500 rounded-xl flex items-center justify-center text-white shadow-lg mx-auto mb-3">
                   <Users className="w-6 h-6" />
                 </div>
-                <div className="text-2xl font-bold text-slate-900">10,000+</div>
-                <div className="text-sm text-slate-500">طبيب معتمد</div>
+                <div className="text-2xl font-bold text-slate-900 dark:text-slate-100">10,000+</div>
+                <div className="text-sm text-slate-500 dark:text-slate-400">طبيب معتمد</div>
               </div>
 
               <div className="text-center">
                 <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl flex items-center justify-center text-white shadow-lg mx-auto mb-3">
                   <Calendar className="w-6 h-6" />
                 </div>
-                <div className="text-2xl font-bold text-slate-900">50,000+</div>
-                <div className="text-sm text-slate-500">موعد شهرياً</div>
+                <div className="text-2xl font-bold text-slate-900 dark:text-slate-100">50,000+</div>
+                <div className="text-sm text-slate-500 dark:text-slate-400">موعد شهرياً</div>
               </div>
 
               <div className="text-center">
                 <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl flex items-center justify-center text-white shadow-lg mx-auto mb-3">
                   <Award className="w-6 h-6" />
                 </div>
-                <div className="text-2xl font-bold text-slate-900">4.9</div>
-                <div className="text-sm text-slate-500">تقييم المستخدمين</div>
+                <div className="text-2xl font-bold text-slate-900 dark:text-slate-100">4.9</div>
+                <div className="text-sm text-slate-500 dark:text-slate-400">تقييم المستخدمين</div>
               </div>
             </div>
 
@@ -85,7 +85,7 @@ export function HeroSection() {
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex items-center justify-center lg:justify-start gap-6 pt-8 text-sm text-slate-500">
+            <div className="flex items-center justify-center lg:justify-start gap-6 pt-8 text-sm text-slate-500 dark:text-slate-400">
               <div className="flex items-center gap-2">
                 <Shield className="w-4 h-4 text-blue-500" />
                 بيانات محمية

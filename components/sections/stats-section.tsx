@@ -29,7 +29,7 @@ const stats = [
 
 export function StatsSection() {
   return (
-    <section className="py-16 bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600">
+    <section className="py-16 bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 dark:from-blue-800 dark:via-purple-800 dark:to-teal-800">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-white mb-4">أرقام تتحدث عن نفسها</h2>

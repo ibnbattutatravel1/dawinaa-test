@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export function CTASection() {
   return (
-    <section className="py-16 bg-gradient-to-br from-blue-600 via-purple-600 to-teal-600 relative overflow-hidden">
+    <section className="py-16 bg-gradient-to-br from-blue-600 via-purple-600 to-teal-600 dark:from-blue-800 dark:via-purple-800 dark:to-teal-800 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-20 -right-20 w-40 h-40 bg-white/10 rounded-full blur-2xl" />

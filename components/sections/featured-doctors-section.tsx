@@ -46,11 +46,11 @@ const featuredDoctors = [
 
 export function FeaturedDoctorsSection() {
   return (
-    <section className="py-16 bg-white dark:bg-gray-800">
+    <section className="py-16 bg-background">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">أطباء مميزون</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold text-foreground mb-4">أطباء مميزون</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             تعرف على نخبة من أفضل الأطباء المعتمدين والحاصلين على أعلى التقييمات
           </p>
         </div>
@@ -69,21 +69,21 @@ export function FeaturedDoctorsSection() {
                       className="rounded-full object-cover"
                     />
                     {doctor.available && (
-                      <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 rounded-full border-2 border-white" />
+                      <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 rounded-full border-2 border-card" />
                     )}
                   </div>
 
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-1">{doctor.name}</h3>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">{doctor.specialty}</p>
+                    <h3 className="font-bold text-lg text-foreground mb-1">{doctor.name}</h3>
+                    <p className="text-sm text-muted-foreground mb-2">{doctor.specialty}</p>
 
                     <div className="flex items-center gap-1 mb-2">
-                      <Star className="w-4 h-4 text-yellow-400 fill-current" />
+                      <Star className="w-4 h-4 text-yellow-400" />
                       <span className="text-sm font-medium">{doctor.rating}</span>
-                      <span className="text-sm text-gray-500">({doctor.reviewsCount})</span>
+                      <span className="text-sm text-muted-foreground">({doctor.reviewsCount})</span>
                     </div>
 
-                    <div className="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400 mb-2">
+                    <div className="flex items-center gap-1 text-sm text-muted-foreground mb-2">
                       <MapPin className="w-4 h-4" />
                       {doctor.location}
                     </div>
